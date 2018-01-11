@@ -27,50 +27,50 @@ goog.exportSymbol('proto.proto.NotificationRequest', null, global);
  * @constructor
  */
 proto.proto.Alert = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+    jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.proto.Alert, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.proto.Alert.displayName = 'proto.proto.Alert';
+    proto.proto.Alert.displayName = 'proto.proto.Alert';
 }
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto suitable for use in Soy templates.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.proto.Alert.prototype.toObject = function(opt_includeInstance) {
-  return proto.proto.Alert.toObject(opt_includeInstance, this);
-};
+    /**
+     * Creates an object representation of this proto suitable for use in Soy templates.
+     * Field names that are reserved in JavaScript and will be renamed to pb_name.
+     * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+     * For the list of reserved names please see:
+     *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
+     * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
+     *     for transitional soy proto support: http://goto/soy-param-migration
+     * @return {!Object}
+     */
+    proto.proto.Alert.prototype.toObject = function(opt_includeInstance) {
+        return proto.proto.Alert.toObject(opt_includeInstance, this);
+    };
 
 
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.proto.Alert} msg The msg instance to transform.
- * @return {!Object}
- */
-proto.proto.Alert.toObject = function(includeInstance, msg) {
-  var f, obj = {
-    title: jspb.Message.getFieldWithDefault(msg, 1, ""),
-    body: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    subtitle: jspb.Message.getFieldWithDefault(msg, 3, "")
-  };
+    /**
+     * Static version of the {@see toObject} method.
+     * @param {boolean|undefined} includeInstance Whether to include the JSPB
+     *     instance for transitional soy proto support:
+     *     http://goto/soy-param-migration
+     * @param {!proto.proto.Alert} msg The msg instance to transform.
+     * @return {!Object}
+     */
+    proto.proto.Alert.toObject = function(includeInstance, msg) {
+        var f, obj = {
+            title: jspb.Message.getFieldWithDefault(msg, 1, ""),
+            body: jspb.Message.getFieldWithDefault(msg, 2, ""),
+            subtitle: jspb.Message.getFieldWithDefault(msg, 3, "")
+        };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
+        if (includeInstance) {
+            obj.$jspbMessageInstance = msg;
+        }
+        return obj;
+    };
 }
 
 
@@ -80,9 +80,9 @@ proto.proto.Alert.toObject = function(includeInstance, msg) {
  * @return {!proto.proto.Alert}
  */
 proto.proto.Alert.deserializeBinary = function(bytes) {
-  var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.proto.Alert;
-  return proto.proto.Alert.deserializeBinaryFromReader(msg, reader);
+    var reader = new jspb.BinaryReader(bytes);
+    var msg = new proto.proto.Alert;
+    return proto.proto.Alert.deserializeBinaryFromReader(msg, reader);
 };
 
 
@@ -94,30 +94,30 @@ proto.proto.Alert.deserializeBinary = function(bytes) {
  * @return {!proto.proto.Alert}
  */
 proto.proto.Alert.deserializeBinaryFromReader = function(msg, reader) {
-  while (reader.nextField()) {
-    if (reader.isEndGroup()) {
-      break;
+    while (reader.nextField()) {
+        if (reader.isEndGroup()) {
+            break;
+        }
+        var field = reader.getFieldNumber();
+        switch (field) {
+            case 1:
+                var value = /** @type {string} */ (reader.readString());
+                msg.setTitle(value);
+                break;
+            case 2:
+                var value = /** @type {string} */ (reader.readString());
+                msg.setBody(value);
+                break;
+            case 3:
+                var value = /** @type {string} */ (reader.readString());
+                msg.setSubtitle(value);
+                break;
+            default:
+                reader.skipField();
+                break;
+        }
     }
-    var field = reader.getFieldNumber();
-    switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setTitle(value);
-      break;
-    case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setBody(value);
-      break;
-    case 3:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setSubtitle(value);
-      break;
-    default:
-      reader.skipField();
-      break;
-    }
-  }
-  return msg;
+    return msg;
 };
 
 
@@ -126,9 +126,9 @@ proto.proto.Alert.deserializeBinaryFromReader = function(msg, reader) {
  * @return {!Uint8Array}
  */
 proto.proto.Alert.prototype.serializeBinary = function() {
-  var writer = new jspb.BinaryWriter();
-  proto.proto.Alert.serializeBinaryToWriter(this, writer);
-  return writer.getResultBuffer();
+    var writer = new jspb.BinaryWriter();
+    proto.proto.Alert.serializeBinaryToWriter(this, writer);
+    return writer.getResultBuffer();
 };
 
 
@@ -139,28 +139,28 @@ proto.proto.Alert.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  */
 proto.proto.Alert.serializeBinaryToWriter = function(message, writer) {
-  var f = undefined;
-  f = message.getTitle();
-  if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
-  }
-  f = message.getBody();
-  if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
-  }
-  f = message.getSubtitle();
-  if (f.length > 0) {
-    writer.writeString(
-      3,
-      f
-    );
-  }
+    var f = undefined;
+    f = message.getTitle();
+    if (f.length > 0) {
+        writer.writeString(
+            1,
+            f
+        );
+    }
+    f = message.getBody();
+    if (f.length > 0) {
+        writer.writeString(
+            2,
+            f
+        );
+    }
+    f = message.getSubtitle();
+    if (f.length > 0) {
+        writer.writeString(
+            3,
+            f
+        );
+    }
 };
 
 
@@ -169,13 +169,13 @@ proto.proto.Alert.serializeBinaryToWriter = function(message, writer) {
  * @return {string}
  */
 proto.proto.Alert.prototype.getTitle = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+    return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
 
 /** @param {string} value */
 proto.proto.Alert.prototype.setTitle = function(value) {
-  jspb.Message.setField(this, 1, value);
+    jspb.Message.setField(this, 1, value);
 };
 
 
@@ -184,13 +184,13 @@ proto.proto.Alert.prototype.setTitle = function(value) {
  * @return {string}
  */
 proto.proto.Alert.prototype.getBody = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+    return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
 /** @param {string} value */
 proto.proto.Alert.prototype.setBody = function(value) {
-  jspb.Message.setField(this, 2, value);
+    jspb.Message.setField(this, 2, value);
 };
 
 
@@ -199,13 +199,13 @@ proto.proto.Alert.prototype.setBody = function(value) {
  * @return {string}
  */
 proto.proto.Alert.prototype.getSubtitle = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+    return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
 
 /** @param {string} value */
 proto.proto.Alert.prototype.setSubtitle = function(value) {
-  jspb.Message.setField(this, 3, value);
+    jspb.Message.setField(this, 3, value);
 };
 
 
@@ -221,11 +221,11 @@ proto.proto.Alert.prototype.setSubtitle = function(value) {
  * @constructor
  */
 proto.proto.NotificationRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, proto.proto.NotificationRequest.repeatedFields_, null);
+    jspb.Message.initialize(this, opt_data, 0, -1, proto.proto.NotificationRequest.repeatedFields_, null);
 };
 goog.inherits(proto.proto.NotificationRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.proto.NotificationRequest.displayName = 'proto.proto.NotificationRequest';
+    proto.proto.NotificationRequest.displayName = 'proto.proto.NotificationRequest';
 }
 /**
  * List of repeated fields within this message type.
@@ -237,48 +237,49 @@ proto.proto.NotificationRequest.repeatedFields_ = [1];
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto suitable for use in Soy templates.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.proto.NotificationRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.proto.NotificationRequest.toObject(opt_includeInstance, this);
-};
+    /**
+     * Creates an object representation of this proto suitable for use in Soy templates.
+     * Field names that are reserved in JavaScript and will be renamed to pb_name.
+     * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+     * For the list of reserved names please see:
+     *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
+     * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
+     *     for transitional soy proto support: http://goto/soy-param-migration
+     * @return {!Object}
+     */
+    proto.proto.NotificationRequest.prototype.toObject = function(opt_includeInstance) {
+        return proto.proto.NotificationRequest.toObject(opt_includeInstance, this);
+    };
 
 
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.proto.NotificationRequest} msg The msg instance to transform.
- * @return {!Object}
- */
-proto.proto.NotificationRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-    tokensList: jspb.Message.getField(msg, 1),
-    platform: jspb.Message.getFieldWithDefault(msg, 2, 0),
-    message: jspb.Message.getFieldWithDefault(msg, 3, ""),
-    title: jspb.Message.getFieldWithDefault(msg, 4, ""),
-    topic: jspb.Message.getFieldWithDefault(msg, 5, ""),
-    key: jspb.Message.getFieldWithDefault(msg, 6, ""),
-    badge: jspb.Message.getFieldWithDefault(msg, 7, 0),
-    category: jspb.Message.getFieldWithDefault(msg, 8, ""),
-    alert: (f = msg.getAlert()) && proto.proto.Alert.toObject(includeInstance, f),
-    sound: jspb.Message.getFieldWithDefault(msg, 10, "")
-  };
+    /**
+     * Static version of the {@see toObject} method.
+     * @param {boolean|undefined} includeInstance Whether to include the JSPB
+     *     instance for transitional soy proto support:
+     *     http://goto/soy-param-migration
+     * @param {!proto.proto.NotificationRequest} msg The msg instance to transform.
+     * @return {!Object}
+     */
+    proto.proto.NotificationRequest.toObject = function(includeInstance, msg) {
+        var f, obj = {
+            tokensList: jspb.Message.getField(msg, 1),
+            platform: jspb.Message.getFieldWithDefault(msg, 2, 0),
+            message: jspb.Message.getFieldWithDefault(msg, 3, ""),
+            title: jspb.Message.getFieldWithDefault(msg, 4, ""),
+            topic: jspb.Message.getFieldWithDefault(msg, 5, ""),
+            key: jspb.Message.getFieldWithDefault(msg, 6, ""),
+            badge: jspb.Message.getFieldWithDefault(msg, 7, 0),
+            category: jspb.Message.getFieldWithDefault(msg, 8, ""),
+            alert: (f = msg.getAlert()) && proto.proto.Alert.toObject(includeInstance, f),
+            sound: jspb.Message.getFieldWithDefault(msg, 10, ""),
+            userinfo: jspb.Message.getFieldWithDefault(msg, 11, ""),
+        };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
+        if (includeInstance) {
+            obj.$jspbMessageInstance = msg;
+        }
+        return obj;
+    };
 }
 
 
@@ -288,9 +289,9 @@ proto.proto.NotificationRequest.toObject = function(includeInstance, msg) {
  * @return {!proto.proto.NotificationRequest}
  */
 proto.proto.NotificationRequest.deserializeBinary = function(bytes) {
-  var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.proto.NotificationRequest;
-  return proto.proto.NotificationRequest.deserializeBinaryFromReader(msg, reader);
+    var reader = new jspb.BinaryReader(bytes);
+    var msg = new proto.proto.NotificationRequest;
+    return proto.proto.NotificationRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
@@ -302,59 +303,63 @@ proto.proto.NotificationRequest.deserializeBinary = function(bytes) {
  * @return {!proto.proto.NotificationRequest}
  */
 proto.proto.NotificationRequest.deserializeBinaryFromReader = function(msg, reader) {
-  while (reader.nextField()) {
-    if (reader.isEndGroup()) {
-      break;
+    while (reader.nextField()) {
+        if (reader.isEndGroup()) {
+            break;
+        }
+        var field = reader.getFieldNumber();
+        switch (field) {
+            case 1:
+                var value = /** @type {string} */ (reader.readString());
+                msg.addTokens(value);
+                break;
+            case 2:
+                var value = /** @type {number} */ (reader.readInt32());
+                msg.setPlatform(value);
+                break;
+            case 3:
+                var value = /** @type {string} */ (reader.readString());
+                msg.setMessage(value);
+                break;
+            case 4:
+                var value = /** @type {string} */ (reader.readString());
+                msg.setTitle(value);
+                break;
+            case 5:
+                var value = /** @type {string} */ (reader.readString());
+                msg.setTopic(value);
+                break;
+            case 6:
+                var value = /** @type {string} */ (reader.readString());
+                msg.setKey(value);
+                break;
+            case 7:
+                var value = /** @type {number} */ (reader.readInt32());
+                msg.setBadge(value);
+                break;
+            case 8:
+                var value = /** @type {string} */ (reader.readString());
+                msg.setCategory(value);
+                break;
+            case 9:
+                var value = new proto.proto.Alert;
+                reader.readMessage(value, proto.proto.Alert.deserializeBinaryFromReader);
+                msg.setAlert(value);
+                break;
+            case 10:
+                var value = /** @type {string} */ (reader.readString());
+                msg.setSound(value);
+                break;
+            case 11:
+                var value = /** @type {string} */ (reader.readString());
+                msg.setUserinfo(value);
+                break;
+            default:
+                reader.skipField();
+                break;
+        }
     }
-    var field = reader.getFieldNumber();
-    switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.addTokens(value);
-      break;
-    case 2:
-      var value = /** @type {number} */ (reader.readInt32());
-      msg.setPlatform(value);
-      break;
-    case 3:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setMessage(value);
-      break;
-    case 4:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setTitle(value);
-      break;
-    case 5:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setTopic(value);
-      break;
-    case 6:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setKey(value);
-      break;
-    case 7:
-      var value = /** @type {number} */ (reader.readInt32());
-      msg.setBadge(value);
-      break;
-    case 8:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setCategory(value);
-      break;
-    case 9:
-      var value = new proto.proto.Alert;
-      reader.readMessage(value,proto.proto.Alert.deserializeBinaryFromReader);
-      msg.setAlert(value);
-      break;
-    case 10:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setSound(value);
-      break;
-    default:
-      reader.skipField();
-      break;
-    }
-  }
-  return msg;
+    return msg;
 };
 
 
@@ -363,9 +368,9 @@ proto.proto.NotificationRequest.deserializeBinaryFromReader = function(msg, read
  * @return {!Uint8Array}
  */
 proto.proto.NotificationRequest.prototype.serializeBinary = function() {
-  var writer = new jspb.BinaryWriter();
-  proto.proto.NotificationRequest.serializeBinaryToWriter(this, writer);
-  return writer.getResultBuffer();
+    var writer = new jspb.BinaryWriter();
+    proto.proto.NotificationRequest.serializeBinaryToWriter(this, writer);
+    return writer.getResultBuffer();
 };
 
 
@@ -376,78 +381,85 @@ proto.proto.NotificationRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  */
 proto.proto.NotificationRequest.serializeBinaryToWriter = function(message, writer) {
-  var f = undefined;
-  f = message.getTokensList();
-  if (f.length > 0) {
-    writer.writeRepeatedString(
-      1,
-      f
-    );
-  }
-  f = message.getPlatform();
-  if (f !== 0) {
-    writer.writeInt32(
-      2,
-      f
-    );
-  }
-  f = message.getMessage();
-  if (f.length > 0) {
-    writer.writeString(
-      3,
-      f
-    );
-  }
-  f = message.getTitle();
-  if (f.length > 0) {
-    writer.writeString(
-      4,
-      f
-    );
-  }
-  f = message.getTopic();
-  if (f.length > 0) {
-    writer.writeString(
-      5,
-      f
-    );
-  }
-  f = message.getKey();
-  if (f.length > 0) {
-    writer.writeString(
-      6,
-      f
-    );
-  }
-  f = message.getBadge();
-  if (f !== 0) {
-    writer.writeInt32(
-      7,
-      f
-    );
-  }
-  f = message.getCategory();
-  if (f.length > 0) {
-    writer.writeString(
-      8,
-      f
-    );
-  }
-  f = message.getAlert();
-  if (f != null) {
-    writer.writeMessage(
-      9,
-      f,
-      proto.proto.Alert.serializeBinaryToWriter
-    );
-  }
-  f = message.getSound();
-  if (f.length > 0) {
-    writer.writeString(
-      10,
-      f
-    );
-  }
+    var f = undefined;
+    f = message.getTokensList();
+    if (f.length > 0) {
+        writer.writeRepeatedString(
+            1,
+            f
+        );
+    }
+    f = message.getPlatform();
+    if (f !== 0) {
+        writer.writeInt32(
+            2,
+            f
+        );
+    }
+    f = message.getMessage();
+    if (f.length > 0) {
+        writer.writeString(
+            3,
+            f
+        );
+    }
+    f = message.getTitle();
+    if (f.length > 0) {
+        writer.writeString(
+            4,
+            f
+        );
+    }
+    f = message.getTopic();
+    if (f.length > 0) {
+        writer.writeString(
+            5,
+            f
+        );
+    }
+    f = message.getKey();
+    if (f.length > 0) {
+        writer.writeString(
+            6,
+            f
+        );
+    }
+    f = message.getBadge();
+    if (f !== 0) {
+        writer.writeInt32(
+            7,
+            f
+        );
+    }
+    f = message.getCategory();
+    if (f.length > 0) {
+        writer.writeString(
+            8,
+            f
+        );
+    }
+    f = message.getAlert();
+    if (f != null) {
+        writer.writeMessage(
+            9,
+            f,
+            proto.proto.Alert.serializeBinaryToWriter
+        );
+    }
+    f = message.getSound();
+    if (f.length > 0) {
+        writer.writeString(
+            10,
+            f
+        );
+    }
+    f = message.getUserinfo();
+    if (f.length > 0) {
+        writer.writeString(
+            11,
+            f
+        );
+    }
 };
 
 
@@ -458,13 +470,13 @@ proto.proto.NotificationRequest.serializeBinaryToWriter = function(message, writ
  * @return {!Array.<string>}
  */
 proto.proto.NotificationRequest.prototype.getTokensList = function() {
-  return /** @type {!Array.<string>} */ (jspb.Message.getField(this, 1));
+    return /** @type {!Array.<string>} */ (jspb.Message.getField(this, 1));
 };
 
 
 /** @param {!Array.<string>} value */
 proto.proto.NotificationRequest.prototype.setTokensList = function(value) {
-  jspb.Message.setField(this, 1, value || []);
+    jspb.Message.setField(this, 1, value || []);
 };
 
 
@@ -473,12 +485,12 @@ proto.proto.NotificationRequest.prototype.setTokensList = function(value) {
  * @param {number=} opt_index
  */
 proto.proto.NotificationRequest.prototype.addTokens = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 1, value, opt_index);
+    jspb.Message.addToRepeatedField(this, 1, value, opt_index);
 };
 
 
 proto.proto.NotificationRequest.prototype.clearTokensList = function() {
-  this.setTokensList([]);
+    this.setTokensList([]);
 };
 
 
@@ -487,13 +499,13 @@ proto.proto.NotificationRequest.prototype.clearTokensList = function() {
  * @return {number}
  */
 proto.proto.NotificationRequest.prototype.getPlatform = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
+    return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
 proto.proto.NotificationRequest.prototype.setPlatform = function(value) {
-  jspb.Message.setField(this, 2, value);
+    jspb.Message.setField(this, 2, value);
 };
 
 
@@ -502,13 +514,13 @@ proto.proto.NotificationRequest.prototype.setPlatform = function(value) {
  * @return {string}
  */
 proto.proto.NotificationRequest.prototype.getMessage = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+    return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
 
 /** @param {string} value */
 proto.proto.NotificationRequest.prototype.setMessage = function(value) {
-  jspb.Message.setField(this, 3, value);
+    jspb.Message.setField(this, 3, value);
 };
 
 
@@ -517,13 +529,13 @@ proto.proto.NotificationRequest.prototype.setMessage = function(value) {
  * @return {string}
  */
 proto.proto.NotificationRequest.prototype.getTitle = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+    return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
 };
 
 
 /** @param {string} value */
 proto.proto.NotificationRequest.prototype.setTitle = function(value) {
-  jspb.Message.setField(this, 4, value);
+    jspb.Message.setField(this, 4, value);
 };
 
 
@@ -532,13 +544,13 @@ proto.proto.NotificationRequest.prototype.setTitle = function(value) {
  * @return {string}
  */
 proto.proto.NotificationRequest.prototype.getTopic = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
+    return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
 };
 
 
 /** @param {string} value */
 proto.proto.NotificationRequest.prototype.setTopic = function(value) {
-  jspb.Message.setField(this, 5, value);
+    jspb.Message.setField(this, 5, value);
 };
 
 
@@ -547,13 +559,13 @@ proto.proto.NotificationRequest.prototype.setTopic = function(value) {
  * @return {string}
  */
 proto.proto.NotificationRequest.prototype.getKey = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 6, ""));
+    return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 6, ""));
 };
 
 
 /** @param {string} value */
 proto.proto.NotificationRequest.prototype.setKey = function(value) {
-  jspb.Message.setField(this, 6, value);
+    jspb.Message.setField(this, 6, value);
 };
 
 
@@ -562,13 +574,13 @@ proto.proto.NotificationRequest.prototype.setKey = function(value) {
  * @return {number}
  */
 proto.proto.NotificationRequest.prototype.getBadge = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 7, 0));
+    return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 7, 0));
 };
 
 
 /** @param {number} value */
 proto.proto.NotificationRequest.prototype.setBadge = function(value) {
-  jspb.Message.setField(this, 7, value);
+    jspb.Message.setField(this, 7, value);
 };
 
 
@@ -577,13 +589,13 @@ proto.proto.NotificationRequest.prototype.setBadge = function(value) {
  * @return {string}
  */
 proto.proto.NotificationRequest.prototype.getCategory = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 8, ""));
+    return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 8, ""));
 };
 
 
 /** @param {string} value */
 proto.proto.NotificationRequest.prototype.setCategory = function(value) {
-  jspb.Message.setField(this, 8, value);
+    jspb.Message.setField(this, 8, value);
 };
 
 
@@ -592,19 +604,19 @@ proto.proto.NotificationRequest.prototype.setCategory = function(value) {
  * @return {?proto.proto.Alert}
  */
 proto.proto.NotificationRequest.prototype.getAlert = function() {
-  return /** @type{?proto.proto.Alert} */ (
-    jspb.Message.getWrapperField(this, proto.proto.Alert, 9));
+    return /** @type{?proto.proto.Alert} */ (
+        jspb.Message.getWrapperField(this, proto.proto.Alert, 9));
 };
 
 
 /** @param {?proto.proto.Alert|undefined} value */
 proto.proto.NotificationRequest.prototype.setAlert = function(value) {
-  jspb.Message.setWrapperField(this, 9, value);
+    jspb.Message.setWrapperField(this, 9, value);
 };
 
 
 proto.proto.NotificationRequest.prototype.clearAlert = function() {
-  this.setAlert(undefined);
+    this.setAlert(undefined);
 };
 
 
@@ -613,7 +625,7 @@ proto.proto.NotificationRequest.prototype.clearAlert = function() {
  * @return {!boolean}
  */
 proto.proto.NotificationRequest.prototype.hasAlert = function() {
-  return jspb.Message.getField(this, 9) != null;
+    return jspb.Message.getField(this, 9) != null;
 };
 
 
@@ -622,13 +634,27 @@ proto.proto.NotificationRequest.prototype.hasAlert = function() {
  * @return {string}
  */
 proto.proto.NotificationRequest.prototype.getSound = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 10, ""));
+    return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 10, ""));
 };
 
 
 /** @param {string} value */
 proto.proto.NotificationRequest.prototype.setSound = function(value) {
-  jspb.Message.setField(this, 10, value);
+    jspb.Message.setField(this, 10, value);
+};
+
+/**
+ * optional string userinfo = 11;
+ * @return {string}
+ */
+proto.proto.NotificationRequest.prototype.getUserinfo = function() {
+    return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 11, ""));
+};
+
+
+/** @param {string} value */
+proto.proto.NotificationRequest.prototype.setUserinfo = function(value) {
+    jspb.Message.setField(this, 11, value);
 };
 
 
@@ -644,49 +670,49 @@ proto.proto.NotificationRequest.prototype.setSound = function(value) {
  * @constructor
  */
 proto.proto.NotificationReply = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+    jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.proto.NotificationReply, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.proto.NotificationReply.displayName = 'proto.proto.NotificationReply';
+    proto.proto.NotificationReply.displayName = 'proto.proto.NotificationReply';
 }
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto suitable for use in Soy templates.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.proto.NotificationReply.prototype.toObject = function(opt_includeInstance) {
-  return proto.proto.NotificationReply.toObject(opt_includeInstance, this);
-};
+    /**
+     * Creates an object representation of this proto suitable for use in Soy templates.
+     * Field names that are reserved in JavaScript and will be renamed to pb_name.
+     * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+     * For the list of reserved names please see:
+     *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
+     * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
+     *     for transitional soy proto support: http://goto/soy-param-migration
+     * @return {!Object}
+     */
+    proto.proto.NotificationReply.prototype.toObject = function(opt_includeInstance) {
+        return proto.proto.NotificationReply.toObject(opt_includeInstance, this);
+    };
 
 
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.proto.NotificationReply} msg The msg instance to transform.
- * @return {!Object}
- */
-proto.proto.NotificationReply.toObject = function(includeInstance, msg) {
-  var f, obj = {
-    success: jspb.Message.getFieldWithDefault(msg, 1, false),
-    counts: jspb.Message.getFieldWithDefault(msg, 2, 0)
-  };
+    /**
+     * Static version of the {@see toObject} method.
+     * @param {boolean|undefined} includeInstance Whether to include the JSPB
+     *     instance for transitional soy proto support:
+     *     http://goto/soy-param-migration
+     * @param {!proto.proto.NotificationReply} msg The msg instance to transform.
+     * @return {!Object}
+     */
+    proto.proto.NotificationReply.toObject = function(includeInstance, msg) {
+        var f, obj = {
+            success: jspb.Message.getFieldWithDefault(msg, 1, false),
+            counts: jspb.Message.getFieldWithDefault(msg, 2, 0)
+        };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
+        if (includeInstance) {
+            obj.$jspbMessageInstance = msg;
+        }
+        return obj;
+    };
 }
 
 
@@ -696,9 +722,9 @@ proto.proto.NotificationReply.toObject = function(includeInstance, msg) {
  * @return {!proto.proto.NotificationReply}
  */
 proto.proto.NotificationReply.deserializeBinary = function(bytes) {
-  var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.proto.NotificationReply;
-  return proto.proto.NotificationReply.deserializeBinaryFromReader(msg, reader);
+    var reader = new jspb.BinaryReader(bytes);
+    var msg = new proto.proto.NotificationReply;
+    return proto.proto.NotificationReply.deserializeBinaryFromReader(msg, reader);
 };
 
 
@@ -710,26 +736,26 @@ proto.proto.NotificationReply.deserializeBinary = function(bytes) {
  * @return {!proto.proto.NotificationReply}
  */
 proto.proto.NotificationReply.deserializeBinaryFromReader = function(msg, reader) {
-  while (reader.nextField()) {
-    if (reader.isEndGroup()) {
-      break;
+    while (reader.nextField()) {
+        if (reader.isEndGroup()) {
+            break;
+        }
+        var field = reader.getFieldNumber();
+        switch (field) {
+            case 1:
+                var value = /** @type {boolean} */ (reader.readBool());
+                msg.setSuccess(value);
+                break;
+            case 2:
+                var value = /** @type {number} */ (reader.readInt32());
+                msg.setCounts(value);
+                break;
+            default:
+                reader.skipField();
+                break;
+        }
     }
-    var field = reader.getFieldNumber();
-    switch (field) {
-    case 1:
-      var value = /** @type {boolean} */ (reader.readBool());
-      msg.setSuccess(value);
-      break;
-    case 2:
-      var value = /** @type {number} */ (reader.readInt32());
-      msg.setCounts(value);
-      break;
-    default:
-      reader.skipField();
-      break;
-    }
-  }
-  return msg;
+    return msg;
 };
 
 
@@ -738,9 +764,9 @@ proto.proto.NotificationReply.deserializeBinaryFromReader = function(msg, reader
  * @return {!Uint8Array}
  */
 proto.proto.NotificationReply.prototype.serializeBinary = function() {
-  var writer = new jspb.BinaryWriter();
-  proto.proto.NotificationReply.serializeBinaryToWriter(this, writer);
-  return writer.getResultBuffer();
+    var writer = new jspb.BinaryWriter();
+    proto.proto.NotificationReply.serializeBinaryToWriter(this, writer);
+    return writer.getResultBuffer();
 };
 
 
@@ -751,21 +777,21 @@ proto.proto.NotificationReply.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  */
 proto.proto.NotificationReply.serializeBinaryToWriter = function(message, writer) {
-  var f = undefined;
-  f = message.getSuccess();
-  if (f) {
-    writer.writeBool(
-      1,
-      f
-    );
-  }
-  f = message.getCounts();
-  if (f !== 0) {
-    writer.writeInt32(
-      2,
-      f
-    );
-  }
+    var f = undefined;
+    f = message.getSuccess();
+    if (f) {
+        writer.writeBool(
+            1,
+            f
+        );
+    }
+    f = message.getCounts();
+    if (f !== 0) {
+        writer.writeInt32(
+            2,
+            f
+        );
+    }
 };
 
 
@@ -776,13 +802,13 @@ proto.proto.NotificationReply.serializeBinaryToWriter = function(message, writer
  * @return {boolean}
  */
 proto.proto.NotificationReply.prototype.getSuccess = function() {
-  return /** @type {boolean} */ (jspb.Message.getFieldWithDefault(this, 1, false));
+    return /** @type {boolean} */ (jspb.Message.getFieldWithDefault(this, 1, false));
 };
 
 
 /** @param {boolean} value */
 proto.proto.NotificationReply.prototype.setSuccess = function(value) {
-  jspb.Message.setField(this, 1, value);
+    jspb.Message.setField(this, 1, value);
 };
 
 
@@ -791,13 +817,13 @@ proto.proto.NotificationReply.prototype.setSuccess = function(value) {
  * @return {number}
  */
 proto.proto.NotificationReply.prototype.getCounts = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
+    return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
 proto.proto.NotificationReply.prototype.setCounts = function(value) {
-  jspb.Message.setField(this, 2, value);
+    jspb.Message.setField(this, 2, value);
 };
 
 
@@ -813,48 +839,48 @@ proto.proto.NotificationReply.prototype.setCounts = function(value) {
  * @constructor
  */
 proto.proto.HealthCheckRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+    jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.proto.HealthCheckRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.proto.HealthCheckRequest.displayName = 'proto.proto.HealthCheckRequest';
+    proto.proto.HealthCheckRequest.displayName = 'proto.proto.HealthCheckRequest';
 }
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto suitable for use in Soy templates.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.proto.HealthCheckRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.proto.HealthCheckRequest.toObject(opt_includeInstance, this);
-};
+    /**
+     * Creates an object representation of this proto suitable for use in Soy templates.
+     * Field names that are reserved in JavaScript and will be renamed to pb_name.
+     * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+     * For the list of reserved names please see:
+     *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
+     * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
+     *     for transitional soy proto support: http://goto/soy-param-migration
+     * @return {!Object}
+     */
+    proto.proto.HealthCheckRequest.prototype.toObject = function(opt_includeInstance) {
+        return proto.proto.HealthCheckRequest.toObject(opt_includeInstance, this);
+    };
 
 
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.proto.HealthCheckRequest} msg The msg instance to transform.
- * @return {!Object}
- */
-proto.proto.HealthCheckRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-    service: jspb.Message.getFieldWithDefault(msg, 1, "")
-  };
+    /**
+     * Static version of the {@see toObject} method.
+     * @param {boolean|undefined} includeInstance Whether to include the JSPB
+     *     instance for transitional soy proto support:
+     *     http://goto/soy-param-migration
+     * @param {!proto.proto.HealthCheckRequest} msg The msg instance to transform.
+     * @return {!Object}
+     */
+    proto.proto.HealthCheckRequest.toObject = function(includeInstance, msg) {
+        var f, obj = {
+            service: jspb.Message.getFieldWithDefault(msg, 1, "")
+        };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
+        if (includeInstance) {
+            obj.$jspbMessageInstance = msg;
+        }
+        return obj;
+    };
 }
 
 
@@ -864,9 +890,9 @@ proto.proto.HealthCheckRequest.toObject = function(includeInstance, msg) {
  * @return {!proto.proto.HealthCheckRequest}
  */
 proto.proto.HealthCheckRequest.deserializeBinary = function(bytes) {
-  var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.proto.HealthCheckRequest;
-  return proto.proto.HealthCheckRequest.deserializeBinaryFromReader(msg, reader);
+    var reader = new jspb.BinaryReader(bytes);
+    var msg = new proto.proto.HealthCheckRequest;
+    return proto.proto.HealthCheckRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
@@ -878,22 +904,22 @@ proto.proto.HealthCheckRequest.deserializeBinary = function(bytes) {
  * @return {!proto.proto.HealthCheckRequest}
  */
 proto.proto.HealthCheckRequest.deserializeBinaryFromReader = function(msg, reader) {
-  while (reader.nextField()) {
-    if (reader.isEndGroup()) {
-      break;
+    while (reader.nextField()) {
+        if (reader.isEndGroup()) {
+            break;
+        }
+        var field = reader.getFieldNumber();
+        switch (field) {
+            case 1:
+                var value = /** @type {string} */ (reader.readString());
+                msg.setService(value);
+                break;
+            default:
+                reader.skipField();
+                break;
+        }
     }
-    var field = reader.getFieldNumber();
-    switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setService(value);
-      break;
-    default:
-      reader.skipField();
-      break;
-    }
-  }
-  return msg;
+    return msg;
 };
 
 
@@ -902,9 +928,9 @@ proto.proto.HealthCheckRequest.deserializeBinaryFromReader = function(msg, reade
  * @return {!Uint8Array}
  */
 proto.proto.HealthCheckRequest.prototype.serializeBinary = function() {
-  var writer = new jspb.BinaryWriter();
-  proto.proto.HealthCheckRequest.serializeBinaryToWriter(this, writer);
-  return writer.getResultBuffer();
+    var writer = new jspb.BinaryWriter();
+    proto.proto.HealthCheckRequest.serializeBinaryToWriter(this, writer);
+    return writer.getResultBuffer();
 };
 
 
@@ -915,14 +941,14 @@ proto.proto.HealthCheckRequest.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  */
 proto.proto.HealthCheckRequest.serializeBinaryToWriter = function(message, writer) {
-  var f = undefined;
-  f = message.getService();
-  if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
-  }
+    var f = undefined;
+    f = message.getService();
+    if (f.length > 0) {
+        writer.writeString(
+            1,
+            f
+        );
+    }
 };
 
 
@@ -931,13 +957,13 @@ proto.proto.HealthCheckRequest.serializeBinaryToWriter = function(message, write
  * @return {string}
  */
 proto.proto.HealthCheckRequest.prototype.getService = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+    return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
 
 /** @param {string} value */
 proto.proto.HealthCheckRequest.prototype.setService = function(value) {
-  jspb.Message.setField(this, 1, value);
+    jspb.Message.setField(this, 1, value);
 };
 
 
@@ -953,48 +979,48 @@ proto.proto.HealthCheckRequest.prototype.setService = function(value) {
  * @constructor
  */
 proto.proto.HealthCheckResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+    jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.proto.HealthCheckResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.proto.HealthCheckResponse.displayName = 'proto.proto.HealthCheckResponse';
+    proto.proto.HealthCheckResponse.displayName = 'proto.proto.HealthCheckResponse';
 }
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto suitable for use in Soy templates.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.proto.HealthCheckResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.proto.HealthCheckResponse.toObject(opt_includeInstance, this);
-};
+    /**
+     * Creates an object representation of this proto suitable for use in Soy templates.
+     * Field names that are reserved in JavaScript and will be renamed to pb_name.
+     * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+     * For the list of reserved names please see:
+     *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
+     * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
+     *     for transitional soy proto support: http://goto/soy-param-migration
+     * @return {!Object}
+     */
+    proto.proto.HealthCheckResponse.prototype.toObject = function(opt_includeInstance) {
+        return proto.proto.HealthCheckResponse.toObject(opt_includeInstance, this);
+    };
 
 
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.proto.HealthCheckResponse} msg The msg instance to transform.
- * @return {!Object}
- */
-proto.proto.HealthCheckResponse.toObject = function(includeInstance, msg) {
-  var f, obj = {
-    status: jspb.Message.getFieldWithDefault(msg, 1, 0)
-  };
+    /**
+     * Static version of the {@see toObject} method.
+     * @param {boolean|undefined} includeInstance Whether to include the JSPB
+     *     instance for transitional soy proto support:
+     *     http://goto/soy-param-migration
+     * @param {!proto.proto.HealthCheckResponse} msg The msg instance to transform.
+     * @return {!Object}
+     */
+    proto.proto.HealthCheckResponse.toObject = function(includeInstance, msg) {
+        var f, obj = {
+            status: jspb.Message.getFieldWithDefault(msg, 1, 0)
+        };
 
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
+        if (includeInstance) {
+            obj.$jspbMessageInstance = msg;
+        }
+        return obj;
+    };
 }
 
 
@@ -1004,9 +1030,9 @@ proto.proto.HealthCheckResponse.toObject = function(includeInstance, msg) {
  * @return {!proto.proto.HealthCheckResponse}
  */
 proto.proto.HealthCheckResponse.deserializeBinary = function(bytes) {
-  var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.proto.HealthCheckResponse;
-  return proto.proto.HealthCheckResponse.deserializeBinaryFromReader(msg, reader);
+    var reader = new jspb.BinaryReader(bytes);
+    var msg = new proto.proto.HealthCheckResponse;
+    return proto.proto.HealthCheckResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
@@ -1018,22 +1044,22 @@ proto.proto.HealthCheckResponse.deserializeBinary = function(bytes) {
  * @return {!proto.proto.HealthCheckResponse}
  */
 proto.proto.HealthCheckResponse.deserializeBinaryFromReader = function(msg, reader) {
-  while (reader.nextField()) {
-    if (reader.isEndGroup()) {
-      break;
+    while (reader.nextField()) {
+        if (reader.isEndGroup()) {
+            break;
+        }
+        var field = reader.getFieldNumber();
+        switch (field) {
+            case 1:
+                var value = /** @type {!proto.proto.HealthCheckResponse.ServingStatus} */ (reader.readEnum());
+                msg.setStatus(value);
+                break;
+            default:
+                reader.skipField();
+                break;
+        }
     }
-    var field = reader.getFieldNumber();
-    switch (field) {
-    case 1:
-      var value = /** @type {!proto.proto.HealthCheckResponse.ServingStatus} */ (reader.readEnum());
-      msg.setStatus(value);
-      break;
-    default:
-      reader.skipField();
-      break;
-    }
-  }
-  return msg;
+    return msg;
 };
 
 
@@ -1042,9 +1068,9 @@ proto.proto.HealthCheckResponse.deserializeBinaryFromReader = function(msg, read
  * @return {!Uint8Array}
  */
 proto.proto.HealthCheckResponse.prototype.serializeBinary = function() {
-  var writer = new jspb.BinaryWriter();
-  proto.proto.HealthCheckResponse.serializeBinaryToWriter(this, writer);
-  return writer.getResultBuffer();
+    var writer = new jspb.BinaryWriter();
+    proto.proto.HealthCheckResponse.serializeBinaryToWriter(this, writer);
+    return writer.getResultBuffer();
 };
 
 
@@ -1055,14 +1081,14 @@ proto.proto.HealthCheckResponse.prototype.serializeBinary = function() {
  * @param {!jspb.BinaryWriter} writer
  */
 proto.proto.HealthCheckResponse.serializeBinaryToWriter = function(message, writer) {
-  var f = undefined;
-  f = message.getStatus();
-  if (f !== 0.0) {
-    writer.writeEnum(
-      1,
-      f
-    );
-  }
+    var f = undefined;
+    f = message.getStatus();
+    if (f !== 0.0) {
+        writer.writeEnum(
+            1,
+            f
+        );
+    }
 };
 
 
@@ -1070,9 +1096,9 @@ proto.proto.HealthCheckResponse.serializeBinaryToWriter = function(message, writ
  * @enum {number}
  */
 proto.proto.HealthCheckResponse.ServingStatus = {
-  UNKNOWN: 0,
-  SERVING: 1,
-  NOT_SERVING: 2
+    UNKNOWN: 0,
+    SERVING: 1,
+    NOT_SERVING: 2
 };
 
 /**
@@ -1080,13 +1106,13 @@ proto.proto.HealthCheckResponse.ServingStatus = {
  * @return {!proto.proto.HealthCheckResponse.ServingStatus}
  */
 proto.proto.HealthCheckResponse.prototype.getStatus = function() {
-  return /** @type {!proto.proto.HealthCheckResponse.ServingStatus} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+    return /** @type {!proto.proto.HealthCheckResponse.ServingStatus} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {!proto.proto.HealthCheckResponse.ServingStatus} value */
 proto.proto.HealthCheckResponse.prototype.setStatus = function(value) {
-  jspb.Message.setField(this, 1, value);
+    jspb.Message.setField(this, 1, value);
 };
 
 

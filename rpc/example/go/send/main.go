@@ -28,6 +28,7 @@ func main() {
 		Message:  "test message",
 		Badge:    1,
 		Category: "test",
+		Userinfo: "{a:'a',b:'b'}",
 		Sound:    "test",
 		Alert: &proto.Alert{
 			Title:    "Test Title",

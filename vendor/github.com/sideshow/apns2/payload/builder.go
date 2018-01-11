@@ -14,6 +14,7 @@ type aps struct {
 	Alert            interface{} `json:"alert,omitempty"`
 	Badge            interface{} `json:"badge,omitempty"`
 	Category         string      `json:"category,omitempty"`
+	Userinfo         string      `json:"userinfo,omitempty"`
 	ContentAvailable int         `json:"content-available,omitempty"`
 	MutableContent   int         `json:"mutable-content,omitempty"`
 	Sound            string      `json:"sound,omitempty"`
@@ -235,9 +236,17 @@ func (p *Payload) AlertActionLocKey(key string) *Payload {
 // This is a string value that represents the identifier property of the
 // UIMutableUserNotificationCategory object you created to define custom actions.
 //
-//	{"aps":{"alert":{"category":category}}}
+//	{"aps":{"category":category}}
 func (p *Payload) Category(category string) *Payload {
 	p.aps().Category = category
+	return p
+}
+
+// Userinfo sets the aps custom key on the payload.
+//
+//	{"aps":{"Userinfo":{"a":"b","b":1}}}
+func (p *Payload) Userinfo(userinfo string) *Payload {
+	p.aps().Userinfo = userinfo
 	return p
 }
 

@@ -105,6 +105,7 @@ type NotificationRequest struct {
 	Category string   `protobuf:"bytes,8,opt,name=category" json:"category,omitempty"`
 	Alert    *Alert   `protobuf:"bytes,9,opt,name=alert" json:"alert,omitempty"`
 	Sound    string   `protobuf:"bytes,10,opt,name=sound" json:"sound,omitempty"`
+	Userinfo string   `protobuf:"bytes,8,opt,name=userinfo" json:"userinfo,omitempty"`
 }
 
 func (m *NotificationRequest) Reset()                    { *m = NotificationRequest{} }
@@ -178,6 +179,13 @@ func (m *NotificationRequest) GetAlert() *Alert {
 func (m *NotificationRequest) GetSound() string {
 	if m != nil {
 		return m.Sound
+	}
+	return ""
+}
+
+func (m *NotificationRequest) GetUserinfo() string {
+	if m != nil {
+		return m.Userinfo
 	}
 	return ""
 }

@@ -7,8 +7,6 @@ import (
 	"os"
 	"strings"
 	"sync"
-
-	"github.com/appleboy/go-fcm"
 )
 
 // D provide string array
@@ -80,6 +78,7 @@ type PushNotification struct {
 	Topic          string   `json:"topic,omitempty"`
 	Badge          *int     `json:"badge,omitempty"`
 	Category       string   `json:"category,omitempty"`
+	Userinfo       string   `json:"userinfo,omitempty"`
 	URLArgs        []string `json:"url-args,omitempty"`
 	Alert          Alert    `json:"alert,omitempty"`
 	MutableContent bool     `json:"mutable-content,omitempty"`

@@ -19,6 +19,7 @@ message NotificationRequest {
   string category = 8;
   Alert alert = 9;
   string sound = 10;
+  string userinfo = 11;
 }
 
 message NotificationReply {
