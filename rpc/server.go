@@ -4,8 +4,8 @@ import (
 	"net"
 	"sync"
 
-	"github.com/appleboy/gorush/gorush"
-	"github.com/appleboy/gorush/rpc/proto"
+	"github.com/xnathanh/gorush/gorush"
+	"github.com/xnathanh/gorush/rpc/proto"
 
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"

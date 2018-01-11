@@ -3,7 +3,7 @@ package gorush
 import (
 	"testing"
 
-	"github.com/appleboy/gorush/config"
+	"github.com/xnathanh/gorush/config"
 	"github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
 )

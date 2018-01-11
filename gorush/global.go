@@ -1,10 +1,9 @@
 package gorush
 
 import (
-	"github.com/appleboy/gorush/config"
-	"github.com/appleboy/gorush/storage"
+	"github.com/xnathanh/gorush/config"
+	"github.com/xnathanh/gorush/storage"
 
-	"github.com/appleboy/go-fcm"
 	"github.com/sideshow/apns2"
 	"github.com/sirupsen/logrus"
 )

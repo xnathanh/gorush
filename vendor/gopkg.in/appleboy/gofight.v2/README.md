@@ -1,6 +1,6 @@
 # Gofight
 
-[![GoDoc](https://godoc.org/github.com/appleboy/gofight?status.svg)](https://godoc.org/github.com/appleboy/gofight) [![Build Status](https://travis-ci.org/appleboy/gofight.svg?branch=master)](https://travis-ci.org/appleboy/gofight) [![Coverage Status](https://coveralls.io/repos/github/appleboy/gofight/badge.svg?branch=master)](https://coveralls.io/github/appleboy/gofight?branch=master) [![Go Report Card](https://goreportcard.com/badge/github.com/appleboy/gofight)](https://goreportcard.com/report/github.com/appleboy/gofight) [![codebeat badge](https://codebeat.co/badges/4d8b58ae-67ec-469e-bde6-be3dd336b30d)](https://codebeat.co/projects/github-com-appleboy-gofight) [![codecov](https://codecov.io/gh/appleboy/gofight/branch/master/graph/badge.svg)](https://codecov.io/gh/appleboy/gofight)
+[![GoDoc](https://godoc.org/github.com/xnathanh/gofight?status.svg)](https://godoc.org/github.com/xnathanh/gofight) [![Build Status](https://travis-ci.org/xnathanh/gofight.svg?branch=master)](https://travis-ci.org/xnathanh/gofight) [![Coverage Status](https://coveralls.io/repos/github/xnathanh/gofight/badge.svg?branch=master)](https://coveralls.io/github/xnathanh/gofight?branch=master) [![Go Report Card](https://goreportcard.com/badge/github.com/xnathanh/gofight)](https://goreportcard.com/report/github.com/xnathanh/gofight) [![codebeat badge](https://codebeat.co/badges/4d8b58ae-67ec-469e-bde6-be3dd336b30d)](https://codebeat.co/projects/github-com-xnathanh-gofight) [![codecov](https://codecov.io/gh/xnathanh/gofight/branch/master/graph/badge.svg)](https://codecov.io/gh/xnathanh/gofight)
 
 API Handler Testing for Golang framework.
 
@@ -17,13 +17,13 @@ API Handler Testing for Golang framework.
 Downladn this package.
 
 ```bash
-$ go get gopkg.in/appleboy/gofight.v1
+$ go get gopkg.in/xnathanh/gofight.v1
 ```
 
 To import this package, add the following line to your code:
 
 ```go
-import "gopkg.in/appleboy/gofight.v1"
+import "gopkg.in/xnathanh/gofight.v1"
 ```
 
 ## Usage
@@ -58,7 +58,7 @@ Testing:
 package main
 
 import (
-  "github.com/appleboy/gofight"
+  "github.com/xnathanh/gofight"
   "github.com/stretchr/testify/assert"
   "net/http"
   "testing"
@@ -248,6 +248,6 @@ $ make
 
 ## License
 
-Copyright 2016 Bo-Yi Wu [@appleboy](https://twitter.com/appleboy).
+Copyright 2016 Bo-Yi Wu [@xnathanh](https://twitter.com/xnathanh).
 
 Licensed under the MIT License.

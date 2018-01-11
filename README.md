@@ -2,15 +2,15 @@
 
 A push notification micro server using [Gin](https://github.com/gin-gonic/gin) framework written in Go (Golang).
 
-[![GoDoc](https://godoc.org/github.com/appleboy/gorush?status.svg)](https://godoc.org/github.com/appleboy/gorush)
-[![Build Status](http://drone.wu-boy.com/api/badges/appleboy/gorush/status.svg)](http://drone.wu-boy.com/appleboy/gorush)
-[![codecov](https://codecov.io/gh/appleboy/gorush/branch/master/graph/badge.svg)](https://codecov.io/gh/appleboy/gorush)
-[![Go Report Card](https://goreportcard.com/badge/github.com/appleboy/gorush)](https://goreportcard.com/report/github.com/appleboy/gorush)
-[![codebeat badge](https://codebeat.co/badges/0a4eff2d-c9ac-46ed-8fd7-b59942983390)](https://codebeat.co/projects/github-com-appleboy-gorush)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c82e0ed283474c5686d705ce64d004f7)](https://www.codacy.com/app/appleboy/gorush?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=appleboy/gorush&amp;utm_campaign=Badge_Grade)
-[![Docker Pulls](https://img.shields.io/docker/pulls/appleboy/gorush.svg)](https://hub.docker.com/r/appleboy/gorush/)
-[![](https://images.microbadger.com/badges/image/appleboy/gorush.svg)](https://microbadger.com/images/appleboy/gorush "Get your own image badge on microbadger.com")
-[![Release](https://github-release-version.herokuapp.com/github/appleboy/gorush/release.svg?style=flat)](https://github.com/appleboy/gorush/releases/latest)
+[![GoDoc](https://godoc.org/github.com/xnathanh/gorush?status.svg)](https://godoc.org/github.com/xnathanh/gorush)
+[![Build Status](http://drone.wu-boy.com/api/badges/xnathanh/gorush/status.svg)](http://drone.wu-boy.com/xnathanh/gorush)
+[![codecov](https://codecov.io/gh/xnathanh/gorush/branch/master/graph/badge.svg)](https://codecov.io/gh/xnathanh/gorush)
+[![Go Report Card](https://goreportcard.com/badge/github.com/xnathanh/gorush)](https://goreportcard.com/report/github.com/xnathanh/gorush)
+[![codebeat badge](https://codebeat.co/badges/0a4eff2d-c9ac-46ed-8fd7-b59942983390)](https://codebeat.co/projects/github-com-xnathanh-gorush)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c82e0ed283474c5686d705ce64d004f7)](https://www.codacy.com/app/xnathanh/gorush?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=xnathanh/gorush&amp;utm_campaign=Badge_Grade)
+[![Docker Pulls](https://img.shields.io/docker/pulls/xnathanh/gorush.svg)](https://hub.docker.com/r/xnathanh/gorush/)
+[![](https://images.microbadger.com/badges/image/xnathanh/gorush.svg)](https://microbadger.com/images/xnathanh/gorush "Get your own image badge on microbadger.com")
+[![Release](https://github-release-version.herokuapp.com/github/xnathanh/gorush/release.svg?style=flat)](https://github.com/xnathanh/gorush/releases/latest)
 
 ## Contents
 
@@ -46,7 +46,7 @@ A push notification micro server using [Gin](https://github.com/gin-gonic/gin) f
 
 ## Features
 
-* Support [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging) using [go-fcm](https://github.com/appleboy/go-fcm) library for Android.
+* Support [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging) using [go-fcm](https://github.com/xnathanh/go-fcm) library for Android.
 * Support [HTTP/2](https://http2.github.io/) Apple Push Notification Service using [apns2](https://github.com/sideshow/apns2) library.
 * Support [YAML](https://github.com/go-yaml/yaml) configuration.
 * Support command line to send single Android or iOS notification.
@@ -159,30 +159,30 @@ How to send push notification using `gorush` command? (Android or iOS)
 
 ### Download a binary
 
-The pre-compiled binaries can be downloaded from [release page](https://github.com/appleboy/gorush/releases).
+The pre-compiled binaries can be downloaded from [release page](https://github.com/xnathanh/gorush/releases).
 
 With `Go` installed
 
 ```
-$ go get -u -v github.com/appleboy/gorush
+$ go get -u -v github.com/xnathanh/gorush
 ```
 
 On linux
 
 ```sh
-$ wget https://github.com/appleboy/gorush/releases/download/1.10.0/gorush-1.10.0-linux-amd64 -O gorush
+$ wget https://github.com/xnathanh/gorush/releases/download/1.10.0/gorush-1.10.0-linux-amd64 -O gorush
 ```
 
 On OS X
 
 ```sh
-$ wget https://github.com/appleboy/gorush/releases/download/1.10.0/gorush-1.10.0-darwin-amd64 -O gorush
+$ wget https://github.com/xnathanh/gorush/releases/download/1.10.0/gorush-1.10.0-darwin-amd64 -O gorush
 ```
 
 On Windows
 
 ```sh
-$ wget https://github.com/appleboy/gorush/releases/download/1.10.0/gorush-1.10.0-windows-amd64.exe -O gorush.exe
+$ wget https://github.com/xnathanh/gorush/releases/download/1.10.0/gorush-1.10.0-windows-amd64.exe -O gorush.exe
 ```
 
 ### Command Usage
@@ -573,7 +573,7 @@ Add other fields which user defined via `data` field.
 }
 ```
 
-Support send notification from different environment. See the detail of [issue](https://github.com/appleboy/gorush/issues/246).
+Support send notification from different environment. See the detail of [issue](https://github.com/xnathanh/gorush/issues/246).
 
 ```diff
 {
@@ -747,7 +747,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/appleboy/gorush/rpc/proto"
+	"github.com/xnathanh/gorush/rpc/proto"
 
 	"google.golang.org/grpc"
 )
@@ -832,7 +832,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/appleboy/gorush/rpc/proto"
+	"github.com/xnathanh/gorush/rpc/proto"
 
 	"google.golang.org/grpc"
 )
@@ -873,18 +873,18 @@ func main() {
 
 ## Run gorush in Docker
 
-Set up `gorush` in the cloud in under 5 minutes with zero knowledge of Golang or Linux shell using our [gorush Docker image](https://hub.docker.com/r/appleboy/gorush/).
+Set up `gorush` in the cloud in under 5 minutes with zero knowledge of Golang or Linux shell using our [gorush Docker image](https://hub.docker.com/r/xnathanh/gorush/).
 
 ```bash
-$ docker pull appleboy/gorush
-$ docker run --name gorush -p 80:8088 appleboy/gorush
+$ docker pull xnathanh/gorush
+$ docker run --name gorush -p 80:8088 xnathanh/gorush
 ```
 
 Run `gorush` with your own config file.
 
 ```bash
-$ docker pull appleboy/gorush
-$ docker run --name gorush -v ${PWD}/config.yml:/config.yml -p 80:8088 appleboy/gorush
+$ docker pull xnathanh/gorush
+$ docker run --name gorush -v ${PWD}/config.yml:/config.yml -p 80:8088 xnathanh/gorush
 ```
 
 Testing your gorush server using [httpie](https://github.com/jkbrzt/httpie) command.
@@ -950,10 +950,10 @@ $ kubectl delete -f k8s
 ```
 ## Stargazers over time
 
-[![Stargazers over time](https://starcharts.herokuapp.com/appleboy/gorush.svg)](https://starcharts.herokuapp.com/appleboy/gorush)
+[![Stargazers over time](https://starcharts.herokuapp.com/xnathanh/gorush.svg)](https://starcharts.herokuapp.com/xnathanh/gorush)
 
 ## License
 
-Copyright 2018 Bo-Yi Wu [@appleboy](https://twitter.com/appleboy).
+Copyright 2018 Bo-Yi Wu [@xnathanh](https://twitter.com/xnathanh).
 
 Licensed under the MIT License.

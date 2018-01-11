@@ -3,8 +3,6 @@ package gorush
 import (
 	"errors"
 	"fmt"
-
-	"github.com/appleboy/go-fcm"
 )
 
 // InitFCMClient use for initialize FCM Client.
