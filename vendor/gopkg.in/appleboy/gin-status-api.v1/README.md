@@ -2,20 +2,20 @@
 
 Golang cpu, memory, gc, etc information api handler written in Go (Golang) for [Gin](https://github.com/gin-gonic/gin) framework
 
-[![GoDoc](https://godoc.org/github.com/xnathanh/gin-status-api?status.svg)](https://godoc.org/github.com/xnathanh/gin-status-api) [![Build Status](https://travis-ci.org/xnathanh/gin-status-api.svg?branch=master)](https://travis-ci.org/xnathanh/gin-status-api) [![Go Report Card](https://goreportcard.com/badge/github.com/xnathanh/gin-status-api)](https://goreportcard.com/report/github.com/xnathanh/gin-status-api) [![Coverage Status](https://coveralls.io/repos/github/xnathanh/gin-status-api/badge.svg?branch=master)](https://coveralls.io/github/xnathanh/gin-status-api?branch=master)
+[![GoDoc](https://godoc.org/github.com/appleboy/gin-status-api?status.svg)](https://godoc.org/github.com/appleboy/gin-status-api) [![Build Status](https://travis-ci.org/appleboy/gin-status-api.svg?branch=master)](https://travis-ci.org/appleboy/gin-status-api) [![Go Report Card](https://goreportcard.com/badge/github.com/appleboy/gin-status-api)](https://goreportcard.com/report/github.com/appleboy/gin-status-api) [![Coverage Status](https://coveralls.io/repos/github/appleboy/gin-status-api/badge.svg?branch=master)](https://coveralls.io/github/appleboy/gin-status-api?branch=master)
 
 ## Usage
 
 Downladn this package.
 
 ```bash
-$ go get gopkg.in/xnathanh/gin-status-api.v1
+$ go get gopkg.in/appleboy/gin-status-api.v1
 ```
 
 To import this package, add the following line to your code:
 
 ```go
-import "gopkg.in/xnathanh/gin-status-api.v1"
+import "gopkg.in/appleboy/gin-status-api.v1"
 ```
 
 ## Example

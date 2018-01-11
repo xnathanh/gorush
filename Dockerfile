@@ -1,11 +1,11 @@
 FROM plugins/base:multiarch
 
 LABEL org.label-schema.version=latest
-LABEL org.label-schema.vcs-url="https://github.com/xnathanh/gorush.git"
+LABEL org.label-schema.vcs-url="https://github.com/appleboy/gorush.git"
 LABEL org.label-schema.name="Gorush"
-LABEL org.label-schema.vendor="xnathanh"
+LABEL org.label-schema.vendor="appleboy"
 LABEL org.label-schema.schema-version="1.0"
-LABEL maintainer="xnathanh"
+LABEL maintainer="appleboy"
 
 ADD release/linux/amd64/gorush /bin/
 

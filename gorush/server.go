@@ -10,7 +10,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"golang.org/x/crypto/acme/autocert"
-	api "gopkg.in/xnathanh/gin-status-api.v1"
+	api "gopkg.in/appleboy/gin-status-api.v1"
 )
 
 func init() {
@@ -38,7 +38,7 @@ func heartbeatHandler(c *gin.Context) {
 
 func versionHandler(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
-		"source":  "https://github.com/xnathanh/gorush",
+		"source":  "https://github.com/appleboy/gorush",
 		"version": GetVersion(),
 	})
 }

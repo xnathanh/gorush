@@ -297,7 +297,7 @@ How to `curl`:
 
 ```bash
 curl -X POST http://localhost:8080/upload \
-  -F "file=@/Users/xnathanh/test.zip" \
+  -F "file=@/Users/appleboy/test.zip" \
   -H "Content-Type: multipart/form-data"
 ```
 
@@ -331,8 +331,8 @@ How to `curl`:
 
 ```bash
 curl -X POST http://localhost:8080/upload \
-  -F "upload[]=@/Users/xnathanh/test1.zip" \
-  -F "upload[]=@/Users/xnathanh/test2.zip" \
+  -F "upload[]=@/Users/appleboy/test1.zip" \
+  -F "upload[]=@/Users/appleboy/test2.zip" \
   -H "Content-Type: multipart/form-data"
 ```
 
@@ -628,7 +628,7 @@ func startPage(c *gin.Context) {
 
 Test it with:
 ```sh
-$ curl -X GET "localhost:8085/testing?name=xnathanh&address=xyz&birthday=1992-03-15"
+$ curl -X GET "localhost:8085/testing?name=appleboy&address=xyz&birthday=1992-03-15"
 ```
 
 ### Bind HTML checkboxes
@@ -1315,4 +1315,4 @@ func main() {
 Awesome project lists using [Gin](https://github.com/gin-gonic/gin) web framework.
 
 * [drone](https://github.com/drone/drone): Drone is a Continuous Delivery platform built on Docker, written in Go
-* [gorush](https://github.com/xnathanh/gorush): A push notification server written in Go.
+* [gorush](https://github.com/appleboy/gorush): A push notification server written in Go.

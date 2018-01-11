@@ -1,7 +1,7 @@
 .PHONY: all example test
 
 TARGETS_NOVENDOR := $(shell glide novendor)
-export PROJECT_PATH = /go/src/github.com/xnathanh/gofight
+export PROJECT_PATH = /go/src/github.com/appleboy/gofight
 
 all: install test
 
@@ -18,7 +18,7 @@ docker_test: clean
 	docker run --rm \
 		-v $(PWD):$(PROJECT_PATH) \
 		-w=$(PROJECT_PATH) \
-		xnathanh/golang-testing \
+		appleboy/golang-testing \
 		sh -c "make install && coverage all"
 
 clean:

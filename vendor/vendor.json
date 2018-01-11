@@ -3,7 +3,7 @@
     "ignore": "test",
     "package": [{
             "checksumSHA1": "1Jql7x7zDOmbDxGr4gsa8rFEC5g=",
-            "path": "github.com/xnathanh/go-fcm",
+            "path": "github.com/appleboy/go-fcm",
             "revision": "3bc382cee4180b7e4753761fda69a003de97b0e9",
             "revisionTime": "2017-10-25T02:33:50Z",
             "version": "0.1.1",
@@ -759,13 +759,13 @@
         },
         {
             "checksumSHA1": "en5imvSO3DBcgfgKdGab3irILZI=",
-            "path": "gopkg.in/xnathanh/gin-status-api.v1",
+            "path": "gopkg.in/appleboy/gin-status-api.v1",
             "revision": "d41a075a5a6883245b7fdefbefd4fa4d1462e1f1",
             "revisionTime": "2016-06-21T05:57:10Z"
         },
         {
             "checksumSHA1": "mfhIuSne6nmZ2FhQRBp+TboDxTo=",
-            "path": "gopkg.in/xnathanh/gofight.v2",
+            "path": "gopkg.in/appleboy/gofight.v2",
             "revision": "beadc315fb676177c07a89c34159b9ca4e1aafd9",
             "revisionTime": "2016-11-16T08:12:57Z"
         },
@@ -830,5 +830,5 @@
             "revisionTime": "2017-02-08T14:18:51Z"
         }
     ],
-    "rootPath": "github.com/xnathanh/gorush"
+    "rootPath": "github.com/appleboy/gorush"
 }

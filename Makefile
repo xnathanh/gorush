@@ -2,7 +2,7 @@ DIST := dist
 EXECUTABLE := gorush
 
 GO ?= go
-DEPLOY_ACCOUNT := xnathanh
+DEPLOY_ACCOUNT := appleboy
 DEPLOY_IMAGE := $(EXECUTABLE)
 GOFMT ?= gofmt "-s"
 EXTERNAL_TOOLS=\

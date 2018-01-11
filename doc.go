@@ -2,7 +2,7 @@
 //
 // Details about the gorush project are found in github page:
 //
-//     https://github.com/xnathanh/gorush
+//     https://github.com/appleboy/gorush
 //
 // The pre-compiled binaries can be downloaded from release page.
 //

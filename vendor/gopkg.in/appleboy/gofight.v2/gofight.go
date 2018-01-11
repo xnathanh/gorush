@@ -2,11 +2,11 @@
 //
 // Details about the gofight project are found in github page:
 //
-//     https://github.com/xnathanh/gofight
+//     https://github.com/appleboy/gofight
 //
 // Installation:
 //
-//    $ go get -u github.com/xnathanh/gofight
+//    $ go get -u github.com/appleboy/gofight
 //
 // Set Header: You can add custom header via SetHeader func.
 //

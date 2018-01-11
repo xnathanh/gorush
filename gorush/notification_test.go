@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/xnathanh/gorush/config"
+	"github.com/appleboy/gorush/config"
 	"github.com/stretchr/testify/assert"
 )
 

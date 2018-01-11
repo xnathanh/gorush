@@ -10,7 +10,7 @@
 # Description:       starts gorush using start-stop-daemon
 ### END INIT INFO
 
-# Original Author: Bo-Yi Wu (xnathanh)
+# Original Author: Bo-Yi Wu (appleboy)
 
 # Do NOT "set -e"
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
