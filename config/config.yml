@@ -8,8 +8,8 @@ core:
   sync: false # set true if you need get error message from fail push notification in API response.
   mode: "release"
   ssl: false
-  cert_path: "cert.pem"
-  key_path: "key.pem"
+  cert_path: "/Volumes/api/apns/cert.pem"
+  key_path: "/Volumes/api/apns/CertificateName.p12"
   http_proxy: "" # only working for FCM server
   pid:
     enabled: false
@@ -21,7 +21,7 @@ core:
     host: "" # which domains the Let's Encrypt will attempt
 
 grpc:
-  enabled: false # enabale gRPC server
+  enabled: true # enabale gRPC server
   port: 9000
 
 api:
@@ -34,18 +34,42 @@ api:
   health_uri: "/healthz"
 
 android:
-  enabled: true
+  enabled: false
   apikey: "YOUR_API_KEY"
   max_retry: 0 # resend fail notification, default value zero is disabled
 
 ios:
-  enabled: false
-  key_path: "key.pem"
-  password: "" # certificate password, default as empty string.
+  enabled: true
+  key_path: "/Volumes/api/apns/CertificateName.p12"
+  password: "123456" # certificate password, default as empty string.
   production: false
   max_retry: 0 # resend fail notification, default value zero is disabled
-  key_id: "" # KeyID from developer account (Certificates, Identifiers & Profiles -> Keys)
-  team_id: "" # TeamID from developer account (View Account -> Membership)
+  key_id: "QKYB5HY5TQ" # KeyID from developer account (Certificates, Identifiers & Profiles -> Keys)
+  team_id: "Z83468T5HS" # TeamID from developer account (View Account -> Membership)
+
+log:
+  format: "string" # string or json
+  access_log: "stdout" # stdout: output to console, or define log path like "log/access_log"
+  access_level: "debug"
+  error_log: "stderr" # stderr: output to console, or define log path like "log/error_log"
+  error_level: "error"
+  hide_token: true
+
+stat:
+  engine: "memory" # support memory, redis, boltdb, buntdb or leveldb
+  redis:
+    addr: "localhost:6379"
+    password: "lu@12345"
+    db: 15
+  boltdb:
+    path: "bolt.db"
+    bucket: "gorush"
+  buntdb:
+    path: "bunt.db"
+  leveldb:
+    path: "level.db"
+
+
 
 log:
   format: "string" # string or json
